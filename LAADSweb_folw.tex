@@ -1,0 +1,26 @@
+\documentclass{ctexbeamer}
+\usepackage{tikz-imagelabels}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usetheme{Darmstadt}
+
+\title{LAADS平台数据获取与验证流程}
+\author{郑雪珂}
+\institute{河南理工大学}
+\begin{document}
+\frame{\titlepage}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\input{chap/1.get_data.tex}
+\input{chap/2.download_data.tex}
+\input{chap/3.check_data.tex}
+
+
+
+\end{document}
