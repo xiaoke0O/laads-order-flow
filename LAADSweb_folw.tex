@@ -8,8 +8,19 @@
 \author{郑雪珂}
 \institute{河南理工大学}
 \begin{document}
+%%%% 标题页 --------------------------------------------------------------------
 \frame{\titlepage}
-
+%%%% 内容梗概 ------------------------------------------------------------------
+\begin{frame}
+  \frametitle{导言}
+  \begin{itemize}
+    \item 内容：在LAADS平台下载VIIRS暗目标法气溶胶产品
+    \item 产品名：AERDT\_L2\_VIIRS\_SNPP
+    \item 下载时间范围：2021年1月1日——2021年2月28日
+    \item 下载空间范围：全中国陆地区域
+  \end{itemize}
+\end{frame}
+%%%% 目录明暗交替 ---------------------------------------------------------------
 \AtBeginSection[]
 {
   \begin{frame}
@@ -17,10 +28,8 @@
     \tableofcontents[currentsection]
   \end{frame}
 }
+%%%% 分章节 --------------------------------------------------------------------
 \input{chap/1.get_data.tex}
 \input{chap/2.download_data.tex}
 \input{chap/3.check_data.tex}
-
-
-
 \end{document}
