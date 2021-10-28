@@ -6,7 +6,7 @@
 
 \title{LAADS平台数据获取与验证流程}
 \author{郑雪珂}
-\institute{河南理工大学}
+\institute{lengfeng1453@hotmail.com}
 \begin{document}
 %%%% 标题页 --------------------------------------------------------------------
 \frame{\titlepage}
@@ -18,8 +18,7 @@
     \item 下载产品名：AERDT\_L2\_VIIRS\_SNPP
     \item 下载时间范围：2021年1月1日——2021年2月28日
     \item 下载空间范围：全中国陆地区域
-    \item 下载工具： Internet Download Manager (IDM)
-    \item 下载建议：避免使用校园网下载，速度慢
+    \item 下载工具： Aria2 v1.36.0
   \end{itemize}
 \end{frame}
 %%%% 目录明暗交替 ---------------------------------------------------------------
@@ -32,6 +31,6 @@
 }
 %%%% 分章节 --------------------------------------------------------------------
 \input{chap/1.get_data.tex}
-\input{chap/2.download_data.tex}
+\input{chap/2.download_data_by_aria2.tex}
 \input{chap/3.check_data.tex}
 \end{document}
