@@ -1,7 +1,6 @@
 \section{数据下载}
 \subsection{获取链接}
 \begin{frame}
-    \frametitle{全选订单文件}
     回到我们的订单内容页面
     \includegraphics[width=\linewidth]{images/20.订单内容}
 \end{frame}
@@ -12,7 +11,7 @@
         \draw[red,very thick](0.23,0.64) rectangle (0.3,0.68);
     \end{annotationimage}
 \end{frame}
-\begin{frame}
+\begin{frame}[label=file-link]
     \frametitle{获取选中文件地址}
     点击\underline{Download All}按钮，获取选中文件的存储链地址
     \begin{annotationimage}{width=\linewidth}{images/24.全选订单文件}
@@ -31,7 +30,7 @@
     假如叫laads\_order\_501666376
     \begin{annotationimage}{width=\linewidth}{images/26.新建一个文件夹}
         \imagelabelset{image label back = white,image label text = black}
-        \draw[image label = {推荐阁下也以这样的方式命名，其中501666376是该订单的订单号 at center}];
+        \draw[image label = {501666376是该订单的订单号 at center}];
     \end{annotationimage}
 \end{frame}
 \begin{frame}
@@ -65,6 +64,7 @@
 \subsection{安装下载工具}
 \begin{frame}
     \frametitle{下载Aria2}
+    为了加快下载速度，我们使用著名的多线程下载工具Aria2\\
     直接从Aria2在GitHub的仓库下载，以64位1.36.0版为例\\
     \url{https://github.com/aria2/aria2/releases}
     \begin{annotationimage}{width=\linewidth}{images/d_by_aria2/下载Aria2}
@@ -112,6 +112,9 @@
 \end{frame}
 \begin{frame}
     \frametitle{下载完成}
-    下载完成时就类似于下图
+    下载完成时就类似于下图\\
+    根据笔者某次下载记录，下载一个21.6G的订单，耗时为2个小时整
+    \footnote{订单大小可以在
+    \hyperlink{file-link}{\beamergotobutton{获取选中文件地址}}这张片子中查看}
     \includegraphics[width=\linewidth]{images/d_by_aria2/下载完成.jpg}
 \end{frame}
