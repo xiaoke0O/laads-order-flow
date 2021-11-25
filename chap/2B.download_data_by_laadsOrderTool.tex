@@ -51,15 +51,83 @@
 \begin{frame}
     \frametitle{}
     在LAADS主页，点Profile，点击Generate Token
-    \begin{annotationimage}[grid]{width=\linewidth}{images/8.登录完成}
+    \begin{annotationimage}{width=\linewidth}{images/8.登录完成}
         \draw[red,very thick](0.89,0.84) rectangle (0.98,0.88);
     \end{annotationimage}
-
-
 \end{frame}
-为了保护用户的用户名和密码不被泄露，现在使用Token进行用户的下载权限识别
 
-
+\begin{frame}
+    \frametitle{复制Token}
+    复制生成的Token
+    \begin{annotationimage}{width=\linewidth}{images/2B.6Token}
+        \draw[red,very thick](0.26,0.6) rectangle (0.71,0.72);
+    \end{annotationimage}
+\end{frame}
+\begin{frame}
+    \frametitle{设置laadsOrderTool}
+    选择\underline{选项}按钮，在Token栏粘贴复制的Token，记得点OK
+    \begin{annotationimage}{width=\linewidth}{images/2B.7设置Token}
+        \draw[red,very thick](0.2,0.72) rectangle (0.25,0.88);
+        \draw[red,very thick](0.34,0.62) rectangle (0.92,0.7);
+        \draw[red,very thick](0.74,0.19) rectangle (0.84,0.26);
+    \end{annotationimage}
+\end{frame}
+% --- 下载订单 ------------------------------------------------------------------
 \subsection{导入订单下载}
 
+\begin{frame}
+    \frametitle{获取订单json链接}
+    打开订单详情页，点击\underline{View as JSON}
+    \begin{annotationimage}{width=\linewidth}{images/20.订单内容}
+        \draw[red,very thick](0.58,0.74) rectangle (0.67,0.78);
+    \end{annotationimage}
+\end{frame}
+\begin{frame}
+    \frametitle{复制订单json地址}
+    然后从浏览器地址栏复制订单的json地址
+    \includegraphics[width=\linewidth]{images/2B.8获取JSON.jpg}
+\end{frame}
+\begin{frame}
+    \frametitle{新建任务}
+    点击laadsOrderTool的\underline{新建任务}，输入json地址，点击OK
+    \includegraphics[width=\linewidth]{images/2B.9输入json}
+\end{frame}
+
+\begin{frame}
+    \frametitle{选择下载文件}
+    订单解析完成后，会显示出来文件条目。默认是全选。\\
+    选择订单文件的存储位置，点击OK开始下载。
+    \includegraphics[width=\linewidth]{images/2B.10订单解析结果}
+\end{frame}
+
+\begin{frame}
+    \frametitle{下载中}
+    下载进行中，如果遇到速度为0的情况，如果网络没断，就耐心等待。
+    \includegraphics[width=\linewidth]{images/2B.11下载中.jpg}
+\end{frame}
+
+% --- 校验订单 ------------------------------------------------------------------
 \subsection{自动校验订单}
+
+\begin{frame}
+    \frametitle{校验中}
+    订单下载完成后会询问是否检查订单完整性的提示，强烈建议选择继续
+    \includegraphics[width=\linewidth]{images/2B.12下载完成.jpg}
+\end{frame}
+
+\begin{frame}
+    \frametitle{校验结果}
+    检验结果展示
+    \includegraphics[width=\linewidth]{images/2B.13校验结果.jpg}
+\end{frame}
+
+\begin{frame}
+    \frametitle{如果查出错误}
+    如果有错误，检测结果就会标红，并且你可以点击红色区域，查看哪些文件出错了。
+    \begin{columns}
+        \column{.5\textwidth}
+        \includegraphics[width=\linewidth]{images/2B.14有错误.jpg}
+        \column{.5\textwidth}
+        \includegraphics[width=\linewidth]{images/2B.15错误报告.jpg}
+    \end{columns}
+\end{frame}

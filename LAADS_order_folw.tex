@@ -4,7 +4,7 @@
 \usepackage{hyperref}
 \usetheme{Darmstadt}
 
-\title{LAADS平台数据获取与验证流程v1.0}
+\title{LAADS平台数据获取与验证流程v2.0}
 \author{郑雪珂}
 \institute{lengfeng1453@hotmail.com}
 \begin{document}
@@ -18,8 +18,16 @@
     \item 下载产品名：AERDT\_L2\_VIIRS\_SNPP
     \item 下载时间范围：2021年1月1日——2021年2月28日
     \item 下载空间范围：全中国陆地区域
-    \item 下载工具： Aria2 v1.36.0
+    \item 下载工具： laadsOrderTool v0.9
   \end{itemize}
+\end{frame}
+\begin{frame}
+  \frametitle{声明}
+  由于本文前后经过多次更改，时间线拉的很长，而LAADS订单的有效期只有5天。所以在文中的
+  截图会出现订单号不连贯的情况，请大家不要有疑惑，按照自己的实际情况操作。
+
+  
+
 \end{frame}
 %%%% 目录明暗交替 ---------------------------------------------------------------
 \AtBeginSection[]
@@ -31,7 +39,7 @@
 }
 %%%% 分章节 --------------------------------------------------------------------
 \input{chap/1.get_data.tex}
-\input{chap/2.download_data_by_aria2.tex}
-\input{chap/3.check_data.tex}
+\input{chap/2B.download_data_by_laadsOrderTool.tex}
+% \input{chap/3.check_data.tex}
 \input{chap/4.future.tex}
 \end{document}
