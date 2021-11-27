@@ -2,12 +2,12 @@
 \subsection{安装下载工具}
 \begin{frame}
     \frametitle{下载安装包}
-    打开laadsOrderTool项目发布页面， 下载最新的安装包
+    打开laadsOrderTool项目发布页面， 下载最新的安装包\footnote{以V0.10.0为例}
 
     \url{https://github.com/xiaoke0O/LAADS-Order-Tool/releases}
 
     \begin{annotationimage}{width=\linewidth}{images/2B.1Release}
-        \draw[red,very thick](0.24,0.58) rectangle (0.48,0.63);
+        \draw[red,very thick](0.06,0.37) rectangle (0.35,0.43);
     \end{annotationimage}
 \end{frame}
 \begin{frame}
@@ -20,8 +20,8 @@
     \frametitle{激活虚拟环境}
     输入激活命令，激活该新建的环境
     \begin{annotationimage}{width=\linewidth}{images/2B.2激活环境}
-        \draw[red,very thick](0.23,0.38) rectangle (0.54,0.43);
-        \draw[red,very thick](0.01,0.29) -- (0.16,0.29);
+        \draw[red,very thick](0.21,0.32) rectangle (0.5,0.38);
+        \draw[red,very thick](0.01,0.22) -- (0.16,0.22);
     \end{annotationimage}
 \end{frame}
 \begin{frame}
@@ -30,16 +30,16 @@
     继续在窗口输入pip install ，然后用鼠标将下载的安装包拖进来(就会自动输入安装包的
     路径)，回车以安装
     \begin{annotationimage}{width=\linewidth}{images/2B.3安装}
-        \draw[red,very thick](0.33,0.3) -- (0.96,0.3);
-        \draw[red,very thick](0.01,0.25) -- (0.16,0.25);
+        \draw[red,very thick](0.33,0.27) -- (0.96,0.27);
+        \draw[red,very thick](0.01,0.22) -- (0.16,0.22);
     \end{annotationimage}
 \end{frame}
 \begin{frame}
     \frametitle{运行laadsOrderTool}
     安装成功后，继续输入laadsOrderTool，回车以运行
     \begin{annotationimage}{width=\linewidth}{images/2B.4运行}
-        \draw[red,very thick](0.01,0.43) -- (0.24,0.43);
-        \draw[red,very thick](0.33,0.12) -- (0.48,0.12);
+        \draw[red,very thick](0.01,0.32) -- (0.22,0.32);
+        \draw[red,very thick](0.3,0.12) -- (0.45,0.12);
     \end{annotationimage}
 \end{frame}
 \begin{frame}
@@ -68,8 +68,8 @@
     选择\underline{选项}按钮，在Token栏粘贴复制的Token，记得点OK
     \begin{annotationimage}{width=\linewidth}{images/2B.7设置Token}
         \draw[red,very thick](0.2,0.72) rectangle (0.25,0.88);
-        \draw[red,very thick](0.34,0.62) rectangle (0.92,0.7);
-        \draw[red,very thick](0.74,0.19) rectangle (0.84,0.26);
+        \draw[red,very thick](0.32,0.58) rectangle (0.92,0.66);
+        \draw[red,very thick](0.71,0.13) rectangle (0.83,0.23);
     \end{annotationimage}
 \end{frame}
 % --- 下载订单 ------------------------------------------------------------------
@@ -112,7 +112,10 @@
 \begin{frame}
     \frametitle{校验中}
     订单下载完成后会询问是否检查订单完整性的提示，强烈建议选择继续
-    \includegraphics[width=\linewidth]{images/2B.12下载完成.jpg}
+    \begin{figure}
+        \includegraphics[width=0.9\linewidth]{images/2B.12下载完成.jpg}
+    \end{figure}
+
 \end{frame}
 
 \begin{frame}
@@ -123,11 +126,10 @@
 
 \begin{frame}
     \frametitle{如果查出错误}
-    如果有错误，检测结果就会标红，并且你可以点击红色区域，查看哪些文件出错了。
-    \begin{columns}
-        \column{.5\textwidth}
-        \includegraphics[width=\linewidth]{images/2B.14有错误.jpg}
-        \column{.5\textwidth}
-        \includegraphics[width=\linewidth]{images/2B.15错误报告.jpg}
-    \end{columns}
+    如果有错误，检测结果就会标红\\
+    可以点击红色区域，查看出错文件。支持一键重新下载或者是删除
+    \begin{figure}
+        \includegraphics[width=0.7\linewidth]{images/2B.14有错误.jpg}
+    \end{figure}
+
 \end{frame}
